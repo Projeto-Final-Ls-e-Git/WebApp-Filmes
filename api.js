@@ -18,8 +18,4 @@ async function buscarConteudo(pagina, limite) {
     return data
 }
 
-console.log(await buscarConteudo(2, 5))
-
-
-
-/*export{buscarConteudo, buscarPorTitulo}*/
+export{buscarConteudo, buscarPorTitulo}
