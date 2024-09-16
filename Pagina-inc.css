@@ -159,25 +159,6 @@ body{
     position: relative;
   }
 
-  .Categoria {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-
-.Vermais {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
 
   
   
