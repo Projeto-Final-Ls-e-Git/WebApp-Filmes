@@ -20,7 +20,6 @@ body{
     box-sizing: border-box;
 }
 
-
 /* Estilizar o campo de busca */
 .barra-busca {
     width: 200px;
@@ -33,7 +32,6 @@ body{
     background-color: transparent;
     color: white;
 }
-
 
 /* Estilizar o botão de busca */
 .botao-busca {
@@ -52,4 +50,27 @@ body{
     background-color: #ffffff;
     border-color: #151515;
     color: black;
+}
+
+.Fileira {
+    display: flex;               /* Organiza os quadros em linha */
+    flex-wrap: wrap;             /* Permite que os quadros "quebrem" para a linha de baixo quando não couberem */
+    justify-content: center;     /* Centraliza os quadros horizontalmente */
+    align-items: center;         /* Centraliza os quadros verticalmente */
+    gap: 20px;                   /* Espaçamento entre os quadros */
+    width: 100%;                 /* Ocupa 100% da largura da tela */
+    padding: 20px; 
+    margin-top: 20vh;              /* Adiciona espaçamento interno na fileira */
+    box-sizing: border-box;      /* Garante que o padding seja considerado no cálculo do tamanho */
+}
+
+/* Estilo dos Quadros */
+.Quadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 18vw;                 /* Largura de 20% da viewport */
+    height: 25vh;
+    border-radius: 10px;
 }

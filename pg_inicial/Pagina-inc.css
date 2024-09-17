@@ -125,7 +125,7 @@ body{
     color: black;
 }
 
-.DivCarrosseis {
+.DivFileiras {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

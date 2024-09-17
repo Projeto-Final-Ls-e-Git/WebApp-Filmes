@@ -124,7 +124,7 @@ object-fit: fill;
     margin: 0 5px; /* Espaçamento ao redor de cada gênero */
 }
 
-.DivCarrosseis {
+.DivFileiras {
     width: 100%;  /* Ajusta a largura total */
     height: auto;  /* Altura ajustável conforme necessário */
     display: flex;
