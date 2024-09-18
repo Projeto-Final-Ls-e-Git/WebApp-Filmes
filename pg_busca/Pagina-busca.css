@@ -20,6 +20,7 @@ body{
     box-sizing: border-box;
 }
 
+
 /* Estilizar o campo de busca */
 .barra-busca {
     width: 200px;
@@ -32,6 +33,7 @@ body{
     background-color: transparent;
     color: white;
 }
+
 
 /* Estilizar o botão de busca */
 .botao-busca {
@@ -52,25 +54,72 @@ body{
     color: black;
 }
 
-.Fileira {
-    display: flex;               /* Organiza os quadros em linha */
-    flex-wrap: wrap;             /* Permite que os quadros "quebrem" para a linha de baixo quando não couberem */
-    justify-content: center;     /* Centraliza os quadros horizontalmente */
-    align-items: center;         /* Centraliza os quadros verticalmente */
-    gap: 20px;                   /* Espaçamento entre os quadros */
-    width: 100%;                 /* Ocupa 100% da largura da tela */
-    padding: 20px; 
-    margin-top: 20vh;              /* Adiciona espaçamento interno na fileira */
-    box-sizing: border-box;      /* Garante que o padding seja considerado no cálculo do tamanho */
+#conteiner_banner {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%; height: 100vh; 
+    position: relative;
+    background-color: #1F1F1F;*/
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo dos Quadros */
-.Quadro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    width: 18vw;                 /* Largura de 20% da viewport */
-    height: 25vh;
-    border-radius: 10px;
+#Banner {
+width: 60%; height: 750px;
+object-fit: fill;
+}
+
+#CampoDescricao{
+    width: 1522px; height: 750px; 
+    position: absolute; 
+    background: linear-gradient(90deg, 
+    rgba(0, 0, 0, 1) , 
+    rgba(3.19, 3.02, 3.02, 1) 40%, 
+    rgba(3.19, 3.02, 3.02, 0.20) 70%, 
+    rgba(6.38, 6.04, 6.04, 0) 100%);    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#Conteudo {
+    width: calc(100% - 770px); height: 750px; 
+    position: absolute; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#titulo {
+    margin-left: 20px;
+    position: absolute;
+    top: 45px;
+    color: rgba(255, 255, 255, 0.932);
+    font-size: 50px;
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#sinopse {
+    margin-left: 40px;
+    position: absolute;
+    top: 190px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#generos {
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Inika, serif; /* Família de fontes */
+    display: flex; /* Flexbox para organizar inline */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-top: 50px; /* Espaço entre a sinopse e os gêneros */
+    margin-left: 20px;
+}
+
+#generos span {
+    margin: 0 5px; /* Espaçamento ao redor de cada gênero */
 }
