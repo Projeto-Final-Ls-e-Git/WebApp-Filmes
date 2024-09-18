@@ -17,5 +17,4 @@ document.getElementsByClassName("botao-busca").addEventListener("click", async()
     } catch (error) {
         console.error('Erro:', error);
     }
-
 })
