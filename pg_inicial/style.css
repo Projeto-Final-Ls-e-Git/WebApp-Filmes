@@ -1,0 +1,58 @@
+#series-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.serie-card {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(51, 26, 26, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.serie-card h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.serie-card img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.serie-card p {
+  margin: 10px 0;
+  font-size: large;
+}
+
+p{
+  color: #ffffff
+}
+
+#paginacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#paginacao button {
+  margin: 0 5px;
+  padding: 5px 20px;
+  background-color: #2562bd;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#paginacao button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+span{
+  color: #ffffff;
+}
