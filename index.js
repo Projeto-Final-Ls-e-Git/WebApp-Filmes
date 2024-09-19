@@ -1,7 +1,7 @@
-import { buscarPorTitulo } from "./api";
-import criarComponenteSerie from "./componente.Js";
-
-document.getElementsByClassName("botao-busca").addEventListener("click", async()=>{
+import {buscarConteudo, buscarPorTitulo} from "./api.js" 
+import criarComponenteSerie from "./componente.js/index.js";
+const button = document.querySelector(".botao-busca");
+button.addEventListener("click", async()=>{
     const titulo = document.getElementById('barra-busca').value;
     console.log(titulo)
     if (!titulo) {
@@ -11,7 +11,7 @@ document.getElementsByClassName("botao-busca").addEventListener("click", async()
     try {
         const serie = await buscarPorTitulo(titulo);
         const component = criarComponenteSerie(serie);
-        /*document.querySelector('.green-box').appendChild(component);*/
+        document.querySelector('.green-box').appendChild(component);
         console.log('ok');
         console.log(component)
     } catch (error) {

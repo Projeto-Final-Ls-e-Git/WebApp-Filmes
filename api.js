@@ -18,4 +18,4 @@ async function buscarConteudo(pagina, limite) {
     return data
 }
 
-export{buscarConteudo, buscarPorTitulo}
+export {buscarConteudo,buscarPorTitulo}
