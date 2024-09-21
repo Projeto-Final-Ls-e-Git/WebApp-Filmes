@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Séries de TV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario-busca">
+        <select id="selecao-limite">
+            <option value="5">5 por página</option>
+            <option value="10" selected>10 por página</option>
+            <option value="20">20 por página</option>
+        </select>
+        <input type="text" id="entrada-busca" placeholder="Digite o nome da série...">
+        <button type="submit" id="botao-busca">Buscar</button>
+    </form>
+    <div id="total-series"></div>
+    <div id="lista-series"></div>
+    <div id="paginacao"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
