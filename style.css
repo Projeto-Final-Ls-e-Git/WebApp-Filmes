@@ -7,15 +7,13 @@ body {
     max-width: 70%;
     margin: 0 auto;
 }
-
 h1 {
     color: #ffffff;
 }
-
 #total-series{
+    margin-top: 30px;
     color: #ffffff;
 }
-
 #formulario-busca, #controles-paginacao {
     display: flex;
     justify-content: flex-end;
@@ -31,7 +29,6 @@ h1 {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
 #selecao-limite{
     width: 140px;
     padding: 5px;
@@ -43,12 +40,10 @@ h1 {
     color: white;
     cursor: pointer;
 }
-
 #selecao-limite option{
     background-color: #1F1F1F;
     color: white;
 }
-
 #entrada-busca {
     width: 200px;
     padding: 5px;
@@ -62,7 +57,6 @@ h1 {
     margin-right: 3px;
     margin-left: 10px;
 }
-
 #botao-busca{
     padding: 11px 20px;
     background-color: #121212;
@@ -73,25 +67,27 @@ h1 {
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 #botao-busca:hover {
     background-color: #ffffff;
     color: black;
 }
-
 button {
     padding: 5px 10px;
 }
-
 #lista-series {
+    margin-top: 20px;
     padding: 0;
+}
+
+#lista-series p{
+    color: #fffdfd;
 }
 
 .serie {
     display: flex;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .serie img {
@@ -107,18 +103,23 @@ button {
 
 .titulo-genero{
     color: #fffdfd;
+    margin-left: 50px;
+    gap: ;
 }
 
-.serie div{
-    margin-left: 10%;
-    margin-right: 10%;
+.titulo-genero h2{
+margin-top: 20px;
+color: #839cb8;
+}
+
+.titulo-genero div{
+    margin-top: 50px;    
 }
 
 #paginacao {
     margin-top: 20px;
     text-align: center;
 }
-
 #paginacao button {
     margin: 0 5px;
     padding: 10px 40px;
@@ -126,13 +127,11 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 #paginacao button:hover{
     background-color: #839cb8;
     color: #ffffff;
     border: 2px solid white;
 }
-
 #paginacao span {
     color: #ffffff;
 }
