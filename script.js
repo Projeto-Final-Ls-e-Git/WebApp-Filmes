@@ -24,22 +24,27 @@ function exibirSeries(series) {
     }
     
     series.forEach(serie => {
+        const elementoTxt = document.createElement('div');
+        elementoTxt.className = 'titulo-genero';
+
+        // Cria um link para o título da série
+        const linkTitulo = document.createElement('a');
+        linkTitulo.href = `https://www.google.com/search?q=${encodeURIComponent(serie.titulo + " onde assistir")}`;
+        linkTitulo.target = "_blank"; // Abre em uma nova aba
+        linkTitulo.innerHTML = `<h2>${serie.titulo}</h2>`; // Define o conteúdo do link
+        
+        elementoTxt.appendChild(linkTitulo); // Adiciona o link ao div
+        elementoTxt.innerHTML += `<p>${serie.generos.join(' • ')}</p>`;
+        
+        listaSeries.appendChild(elementoTxt);
+        
         const elementoSerie = document.createElement('div');
         elementoSerie.className = 'serie';
         elementoSerie.innerHTML = `
             <img src="${serie.imagem}" alt="${serie.titulo}">
+            <div class="resumo">${serie.resumo}</div>
         `;
-
-        const elementoTxt = document.createElement('div');
-        elementoTxt.className = 'titulo-genero';
-        elementoTxt.innerHTML = `
-            <h2>${serie.titulo}</h2>
-            <p>${serie.generos.join(' • ')}</p>
-            <div>${serie.resumo}</div>
-        `;
-        
         listaSeries.appendChild(elementoSerie);
-        elementoSerie.appendChild(elementoTxt);
     });
 }
 function atualizarPaginacao() {
