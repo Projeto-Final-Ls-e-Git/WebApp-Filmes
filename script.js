@@ -28,10 +28,16 @@ function exibirSeries(series) {
     series.forEach(serie => {
         const elementoTxt = document.createElement('div');
         elementoTxt.className = 'titulo-genero';
-        elementoTxt.innerHTML = `
-            <h2>${serie.titulo}</h2>
-            <p>${serie.generos.join(' • ')}</p>
-        `;
+
+        // Cria um link para o título da série
+        const linkTitulo = document.createElement('a');
+        linkTitulo.href = `https://www.google.com/search?q=${encodeURIComponent(serie.titulo + " onde assistir")}`;
+        linkTitulo.target = "_blank"; // Abre em uma nova aba
+        linkTitulo.innerHTML = `<h2>${serie.titulo}</h2>`; // Define o conteúdo do link
+        
+        elementoTxt.appendChild(linkTitulo); // Adiciona o link ao div
+        elementoTxt.innerHTML += `<p>${serie.generos.join(' • ')}</p>`;
+        
         listaSeries.appendChild(elementoTxt);
         
         const elementoSerie = document.createElement('div');
@@ -43,6 +49,8 @@ function exibirSeries(series) {
         listaSeries.appendChild(elementoSerie);
     });
 }
+
+
 
 function atualizarPaginacao() {
     const elementoPaginacao = document.getElementById('paginacao');
